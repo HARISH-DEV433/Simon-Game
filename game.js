@@ -4,7 +4,7 @@ var userClickedPattern = [];
 
 var started = false;
 var level = 0;
-$(document).on('keypress click mouseover', function(){
+$(document).on('keypress click', function(){
     if(!started){
         $("#level-title").html("Level  " + level);
         nextSequence();
